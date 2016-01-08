@@ -19,6 +19,8 @@ body {
   background-size: cover;
 }
 
+.navbar-fixed-top { position: absolute!important; }
+
 .navbar {
    background-color: transparent;
    background: transparent;
