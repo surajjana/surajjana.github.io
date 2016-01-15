@@ -5,9 +5,9 @@
  */
 
 body {
-	margin-top: 50px;
-	margin-bottom: 50px;
-	background: none;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  background: none;
 }
 
 .full {
@@ -19,11 +19,11 @@ body {
 }
 
 .navbar {
-   background-color: transparent;
-   background: transparent;
-   border-color: transparent;
+   background-color: rgba(0,0,0,0.8);
+   background: rgba(0,0,0,0.8);
+   border-color: rgba(0,0,0,0.8);
 }
 
 h1,p {
-	color: #fff;
+  color: #fff;
 }
