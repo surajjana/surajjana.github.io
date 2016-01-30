@@ -27,6 +27,10 @@
     <video autoplay="true" id="videoElement">
      
     </video>
+    <br />
+    <input id="b" type="button" disabled="true" value="Take Picture"></input>
+    <br />
+    <canvas id="c" style="display:none;" width="300" height="300"></canvas>
 </div>
 <script>
 	var video = document.querySelector("#videoElement");
@@ -35,11 +39,19 @@
 	 
 	if (navigator.getUserMedia) {       
 	    navigator.getUserMedia({video: true}, handleVideo, videoError);
+	    button.disabled = false;
+	button.onclick = function() {
+	canvas.getContext("2d").drawImage(video, 0, 0, 300, 300, 0, 0, 300, 300);
+	var img = canvas.toDataURL("image/png");
+	alert("done");
+	};
 	}
 	 
 	function handleVideo(stream) {
 	    video.src = window.URL.createObjectURL(stream);
 	}
+
+
 	 
 	function videoError(e) {
 	    // do something
