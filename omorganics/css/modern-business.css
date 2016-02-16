@@ -67,6 +67,10 @@ header.carousel .fill {
     font-style: italic;
 }
 
+p {
+    text-align: justify;
+    text-justify: inter-word;
+}
 /* Footer Styles */
 
 footer {
