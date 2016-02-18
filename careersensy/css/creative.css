@@ -62,8 +62,18 @@ aside {
 .no-padding {
   padding: 0;
 }
+
+.navbar {
+   background-color: rgba(0,0,0,0.8);
+   background: rgba(0,0,0,0.8);
+   border-color: rgba(0,0,0,0.8);
+}
+
 .navbar-default {
-  background-color: white;
+  /*background-color: white;*/
+  background-color: rgba(0,0,0,0.8);
+  background: rgba(0,0,0,0.8);
+  border-color: rgba(0,0,0,0.8);
   border-color: rgba(34, 34, 34, 0.05);
   font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
   -webkit-transition: all 0.35s;
