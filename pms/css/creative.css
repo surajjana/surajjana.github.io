@@ -24,11 +24,11 @@ a {
   -webkit-transition: all 0.35s;
   -moz-transition: all 0.35s;
   transition: all 0.35s;
-  color: #009688;
+  color: #ffb019;
 }
 a:hover,
 a:focus {
-  color: #009688;
+  color: #ffb019;
 }
 h1,
 h2,
@@ -94,11 +94,11 @@ aside {
 .navbar-default .nav > li > a:hover,
 .navbar-default .nav > li > a:focus:hover {
   /*color: #f05f40;*/
-  color: #009688;
+  color: #ffb019;
 }
 .navbar-default .nav > li.active > a,
 .navbar-default .nav > li.active > a:focus {
-  color: #009688 !important;
+  color: #ffb019 !important;
   background-color: white;
 }
 .navbar-default .nav > li.active > a:hover,
@@ -234,7 +234,7 @@ header .header-content .header-content-inner p {
   margin: 0 auto 20px;
 }
 .text-primary {
-  color: #009688;
+  color: #ffb019;
 }
 .no-gutter > [class*='col-'] {
   padding-right: 0;
