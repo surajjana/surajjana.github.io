@@ -3,7 +3,16 @@
  * Code licensed under the Apache License v2.0.
  * For details, see http://www.apache.org/licenses/LICENSE-2.0.
  */
+ $(document).ready(function(){
+        $("#hide").hide();
+    });
+    
+    
+   // $("#hidden").click(function(){
 
+    //    $("#hide").show();
+      //  });
+    
 (function($) {
     "use strict"; // Start of use strict
 
