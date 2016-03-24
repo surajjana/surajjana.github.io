@@ -41,6 +41,11 @@
             top: 100
         }
     })
+    $('#re').affix({
+        offset: {
+            top: 20%;
+        }
+    })
 
     // Initialize WOW.js Scrolling Animations
     new WOW().init();
