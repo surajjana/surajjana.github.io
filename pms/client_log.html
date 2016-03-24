@@ -282,7 +282,8 @@
               { data: res },
               function(data) {
                  //$('#stage').html(data);
-                 window.location.replace("");
+                 console.log(data);
+                 window.location.replace("http://localhost/surajjana.github.io/pms/conf/data.php?data="+data);
               }
             );
         });
