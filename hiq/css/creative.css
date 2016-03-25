@@ -9,10 +9,33 @@ body {
   margin-bottom: 0 !important;
 }
 
+.navbar-custom{
+  position:fixed;
+  width:100%;
+  z-index:1;
+  border-color:#ece4e4
+}
+
 #test{
   min-height: 50px;
   background-color: #ece4e4;
   padding-top: 12px;
   padding-bottom: 10px;
   box-shadow: 0 0 7px black;
+}
+
+::-webkit-scrollbar
+{
+  width: 5px;  /* for vertical scrollbars */
+  height: 2px; /* for horizontal scrollbars */
+}
+
+::-webkit-scrollbar-track
+{
+  background: rgba(0, 0, 0, 0.1);
+}
+
+::-webkit-scrollbar-thumb
+{
+  background: rgba(0, 0, 0, 0.5);
 }
