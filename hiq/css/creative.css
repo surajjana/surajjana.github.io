@@ -39,3 +39,15 @@ body {
 {
   background: rgba(0, 0, 0, 0.5);
 }
+
+.text-line {
+  background-color: transparent;
+  color: #5a5a5a;
+  outline: none;
+  outline-style: none;
+  outline-offset: 0;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: solid #999999 2px;
+}
