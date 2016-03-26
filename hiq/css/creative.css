@@ -20,7 +20,7 @@ body {
   min-height: 40px;
   background-color: #ece4e4;
   padding-top: 10px;
-  box-shadow: 0 0 7px black;
+  box-shadow: 0 0 7px 0 black;
 }
 
 ::-webkit-scrollbar
