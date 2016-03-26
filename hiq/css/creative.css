@@ -16,11 +16,10 @@ body {
   border-color:#ece4e4
 }
 
-#test{
-  min-height: 50px;
+#top-bar{
+  min-height: 40px;
   background-color: #ece4e4;
-  padding-top: 12px;
-  padding-bottom: 10px;
+  padding-top: 10px;
   box-shadow: 0 0 7px black;
 }
 
