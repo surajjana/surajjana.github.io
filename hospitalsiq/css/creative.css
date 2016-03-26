@@ -1,35 +1,71 @@
-.navbar-inverse {
-	background-color:rgba(59,54,52,1);
-	background:rgba(59,54,52,01);
-	color:#000;
-	border-color: rgba(240,143,98,1.0);
-  border-color: rgba(34, 34, 34, 0.05);
-  font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
-  -webkit-transition: all 0.35s;
-  -moz-transition: all 0.35s;
-  transition: all 0.35s;
-}
-.navbar-inverse .nav > li > a,
-.navbar-inverse .nav > li > a:focus{
-  font-family: 'Andale Mono', 'Helvetica Neue', Arial, sans-serif;
-  text-transform: uppercase;
-  font-weight: 600;
-  font-size: 14px;
-  color: #ffffff;
-}
+html,
+body {
+  height: 100%;
+  width: 100%;
+  padding-top: 25px;
+  position: relative;
+  width: 100%;
+  min-height: auto;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+  background-position: center;
+  background-image: url('../img/home_bg.png');
+  text-align: center;
+  color:white;
 
-.navbar-inverse .nav > li > a:hover,
-.navbar-inverse .nav > li > a:focus:hover {
-  color: #000;
-  background-color: rgba(251,201,64,0.9);
-  /*color: #009688;*/
+  
 }
 
+.navbar{
+  margin-bottom: 0 !important;
+}
 
-#bs-example-navbar-collapse-1{
- font-family: 'Ubuntu';
-  font-size: 13px;
-  font-weight: 300;
-  color:#fff;
+.navbar-custom{
+  position:fixed;
+  width:100%;
+  z-index:1;
+  border-color:#000;
+}
+.navbar-inverse{
+background-color: rgba(255,255,255,0);
+border-color:#a1d6e2;
 
+}
+
+#top-bar{
+  min-height: 40px;
+  background-color: #ece4e4;
+  padding-top: 10px;
+  box-shadow: 0 0 7px black;
+}
+
+
+::-webkit-scrollbar
+{
+  width: 5px;  /* for vertical scrollbars */
+  height: 2px; /* for horizontal scrollbars */
+}
+
+::-webkit-scrollbar-track
+{
+  background: rgba(0, 0, 0, 0.1);
+}
+
+::-webkit-scrollbar-thumb
+{
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.text-line {
+  background-color: transparent;
+  color: #5a5a5a;
+  outline: none;
+  outline-style: none;
+  outline-offset: 0;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: solid #999999 2px;
 }

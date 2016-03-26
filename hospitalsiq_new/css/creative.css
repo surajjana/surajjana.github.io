@@ -11,6 +11,7 @@ body {
 }
 body {
   font-family: 'Merriweather', 'Helvetica Neue', Arial, sans-serif;
+  background-color:rgba(90,90,90,0.2);
 }
 hr {
   border-color: #009688;
@@ -93,8 +94,8 @@ ul {
 }
 
 .navbar-default {
-  background-color:#fff;
-  background:rgba(255,255,255,1);
+  background-color:rgba(240,240,240,0.9);
+  
   color:#000;
  border-top: none;
  border-right:none;
@@ -127,6 +128,8 @@ ul {
 .navbar-default .nav > li > a:focus:hover {
   color: #fff;
   background-color: rgba(25,160,175,1);
+
+
   /*color: #009688;*/
 }
 
@@ -180,7 +183,7 @@ header .header-content .header-content-inner p {
   position: relative;
   top:90%;
   left:0%;
-        background-color: transparent;
+        
         color: rgba(25,160,175,1);
         outline: none;
         outline-style: none;
@@ -257,15 +260,16 @@ header .header-content .header-content-inner p {
 #loct
 {
   /*border-style: solid;*/
-    height:7%;
+    height:9%;
     width:40%;   
     position:fixed;
-    top:7.8%;
+
+    top:9.0%;
     left:30%;
    margin: 0 -1px;
     background:#fff;
     z-index:500;
-    border-radius: 5px;
+    border-radius: 0px;
     box-shadow:0 0 2px rgba(50,50,50,0.4) ;
 }
 

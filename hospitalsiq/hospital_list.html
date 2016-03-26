@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>HospitalsIQ | Home</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css" type="text/css">
+
+    <!-- Plugin CSS -->
+    <link rel="stylesheet" href="css/animate.min.css" type="text/css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/creative.css" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?sensor=false&libraries=places"></script>
+    <script type="text/javascript">
+        google.maps.event.addDomListener(window, 'load', function () {
+            var places = new google.maps.places.Autocomplete(document.getElementById('loc'));
+            google.maps.event.addListener(places, 'place_changed', function () {
+                var place = places.getPlace();
+                var address = place.formatted_address;
+                var latitude = place.geometry.location.lat();
+                var longitude = place.geometry.location.lng();
+                var mesg = "Address: " + address;
+                mesg += "\nLatitude: " + latitude;
+                mesg += "\nLongitude: " + longitude;
+                alert(mesg);
+            });
+        });
+    </script>
+
+</head>
+
+<body id="page-top">
+
+    <nav id="mainNav" class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand page-scroll" href="#page-top">HospitalsIQ</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a class="page-scroll" href="#about">About Us</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#contact">Ping Us</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+
+    <div class=" navbar-custom">
+    <div class="container-fluid">
+        <div class="row" id="top-bar">
+            <div class="col-md-1 col-sm-6 col-xs-6"><center>Filters</center></div>
+            <div class="col-md-10 hidden-sm hidden-xs">
+                <center>
+                    <input type="text" class="text-line" id="loc" size="30" />
+                    <input type="text" class="text-line" id="care" size="30" placeholder="What care you need?" />
+                </center>
+            </div>
+            <div class="col-md-1 col-sm-6 col-xs-6"><center>Sort</center></div>
+        </div>
+    </div>
+    </div>
+
+    
+
+    <div class="container-fluid" style="padding-top:45px;">
+        <div class="row">
+            <div class="col-md-12">Test Data</div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">Test Data</div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">Test Data</div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">Test Data</div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">Test Data</div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">Test Data</div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">Test Data</div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">Test Data</div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">Test Data</div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">Test Data</div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">Test Data</div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">Test Data</div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">Test Data</div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">Test Data</div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">Test Data</div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">Test Data</div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">Test Data</div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">Test Data</div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">Test Data</div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">Test Data</div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">Test Data</div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">Test Data</div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">Test Data</div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">Test Data</div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">Test Data</div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">Test Data</div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">Test Data</div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">Test Data</div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">Test Data</div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">Test Data</div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">Test Data</div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">Test Data</div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">Test Data</div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">Test Data</div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">Test Data</div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">Test Data</div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">Test Data</div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">Test Data</div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">Test Data</div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">Test Data</div>
+        </div>
+        
+    </div>
+
+    
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="js/jquery.easing.min.js"></script>
+    <script src="js/jquery.fittext.js"></script>
+    <script src="js/wow.min.js"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script src="js/creative.js"></script>
+
+</body>
+
+</html>
