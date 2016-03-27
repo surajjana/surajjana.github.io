@@ -63,7 +63,7 @@ aside {
 .no-padding {
   padding: 0;
 }
-.sangu_style li{
+ /*.sangu_style li{
   padding:3px;
 }
 .sangu_style li:hover{
@@ -71,11 +71,11 @@ border-radius:3px;
  border-style:solid;
   border-color:rgba(25,160,175,1);
   /*background: rgba(25,160,175,0.5);*/
-  border-width: 1px;
+ /* border-width: 1px;
   width:33%;
   padding: 2px;
   height:100%;
-  font-color:#fff;
+  font-color:#fff;*/
  /* box-shadow:1px 1px 1px  rgba(8,53,58,1);*/
   
   /*background: rgba(25,160,175,1);*/

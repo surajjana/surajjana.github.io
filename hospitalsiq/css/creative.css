@@ -1,5 +1,6 @@
 html,
 body {
+  overflow-x:hidden;
   height: 100%;
   width: 100%;
   padding-top: 25px;
@@ -13,9 +14,27 @@ body {
   background-position: center;
   background-image: url('../img/home_bg.png');
   text-align: center;
-  color:white;
+  
 
   
+}
+
+
+
+
+ul {
+  margin:0px;
+  padding:0px;
+}
+
+.navbar-inverse {
+  
+  background-color: rgba(255,255,255,0);
+ border-color: rgba(255,255,255,0);
+    font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+  -webkit-transition: all 0.35s;
+  -moz-transition: all 0.35s;
+  transition: all 0.35s;
 }
 
 .navbar{
@@ -26,13 +45,43 @@ body {
   position:fixed;
   width:100%;
   z-index:1;
-  border-color:#000;
+  
 }
-.navbar-inverse{
-background-color: rgba(255,255,255,0);
-border-color:#a1d6e2;
+ 
+ .navbar-inverse .navbar-header .navbar-brand {
+  color: #f05f40;
+  font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+.navbar-inverse .navbar-header .navbar-brand:hover,
+.navbar-inverse .navbar-header .navbar-brand:focus {
+  color: #19a0af;
+}
 
+
+.navbar-inverse .nav > li > a,
+.navbar-inverse .nav > li > a:focus {
+  text-transform: uppercase;
+  font-weight: 1000;
+  font-size: 12px;
+  color: #000;
 }
+.navbar-inverse .nav > li > a:hover,
+.navbar-inverse .nav > li > a:focus:hover {
+ background-color: #444444;
+  color: #fff;
+}
+.navbar-inverse .nav > li.active > a,
+.navbar-inverse .nav > li.active > a:focus {
+  color: #009688 !important;
+  background-color: white;
+}
+.navbar-inverse .nav > li.active > a:hover,
+.navbar-inverse .nav > li.active > a:focus:hover {
+  background-color: #009688;
+}
+
 
 #top-bar{
   min-height: 40px;
@@ -40,6 +89,7 @@ border-color:#a1d6e2;
   padding-top: 10px;
   box-shadow: 0 0 7px black;
 }
+
 
 
 ::-webkit-scrollbar
@@ -59,13 +109,17 @@ border-color:#a1d6e2;
 }
 
 .text-line {
+  position:relative;
+  top:50%;
+  padding-top:250px;
+  padding-left:50px;
   background-color: transparent;
-  color: #5a5a5a;
+  color: #fff;
   outline: none;
   outline-style: none;
   outline-offset: 0;
   border-top: none;
   border-left: none;
   border-right: none;
-  border-bottom: solid #999999 2px;
+  border-bottom: solid #fff 2px;
 }
