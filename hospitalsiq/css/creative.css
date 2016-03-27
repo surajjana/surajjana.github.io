@@ -18,6 +18,30 @@ body {
 
   
 }
+html,
+.list{
+  overflow-x:hidden;
+  height: 100%;
+  width: 100%;
+  padding-top: 25px;
+  position: relative;
+  width: 100%;
+  min-height: auto;
+  
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+  background-position: center;
+  background-image: url('../img/bg.png');
+  text-align: center;*/
+  
+
+}
+#loc,
+#care{
+  color:#000;
+}
 
 
 
@@ -45,6 +69,7 @@ ul {
   position:fixed;
   width:100%;
   z-index:1;
+
   
 }
  
@@ -81,13 +106,42 @@ ul {
 .navbar-inverse .nav > li.active > a:focus:hover {
   background-color: #009688;
 }
+.panel-group{
+  top:30%;
+  padding:7%;
+}
+#img1{
+  border-radius:8px;
+}
+.panel-default{
+  position:relative;
+  padding-top:10px;
+ 
+  border-top:none;
+  border-radius: 10px;
+ box-shadow:0 0 2px rgba(237,237,237,1);
+  left:12%;
+  top:20%;
+ height:250px;
+ width:78%;  
+}
+.panel-body{
+  padding-top:2%;
+  border-top:none;
+  border-left: none;
+  border-right:none;
+  border-bottom:none;
+
+}
 
 
 #top-bar{
-  min-height: 40px;
-  background-color: #ece4e4;
-  padding-top: 10px;
-  box-shadow: 0 0 7px black;
+ background-color: #fff;
+  box-shadow: 0 0 1px rgba(255,120,3,1);
+  padding-top: 17px;
+   padding-bottom: 17px;
+   width:1285px;
+ 
 }
 
 
@@ -122,4 +176,15 @@ ul {
   border-left: none;
   border-right: none;
   border-bottom: solid #fff 2px;
+}
+.text-lines {
+  background-color: transparent;
+  color: #5a5a5a;
+  outline: none;
+  outline-style: none;
+  outline-offset: 0;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: solid #000 1px;
 }
