@@ -45,22 +45,30 @@
             });
         });
     </script>
+    <style>
+    .navbar-inverse{
+        background-color: rgba(255,255,255,1);
 
+        border-bottom:none;
+        box-shadow:0 0 1px rgba(255,120,3,1);
+    }
+    
+    </style>
 </head>
 
-<body id="page-top" class="list">
+<body id="page-top">
 
     <nav id="mainNav" class="navbar navbar-inverse navbar-fixed-top">
         <div class="container-fluid">
             <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-headers">
-                <button type="button" class="navbar-toggle collapsed" style="color:balck;"data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
                     <span class="sr-only">Toggle navigation</span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand page-scroll" href="#page-top" style="padding:5px;"><img src="img/15 green.png" /></a>
+                <a class="navbar-brand page-scroll" href="#page-top" style="padding:5px;"><img src="img/15 green.png"/></a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
@@ -79,17 +87,18 @@
         <!-- /.container-fluid -->
     </nav>
 
+   
+
     <div class=" navbar-custom">
     <div class="container-fluid">
         <div class="row" id="top-bar">
             <div class="col-md-1 col-sm-6 col-xs-6"><center>Filters</center></div>
             <div class="col-md-10 hidden-sm hidden-xs">
                 <center>
-                    <input type="text" class="text-lines" id="loc" size="30" />
-                    <input type="text" class="text-lines" id="care" size="30" placeholder="What care you need?" />
+                    <input type="text" class="text-line" id="loc" size="30" />
+                    <input type="text" class="text-line" id="care" size="30" placeholder="What care you need?" />
                 </center>
             </div>
-            
             <div class="col-md-1 col-sm-6 col-xs-6"><center>Sort</center></div>
         </div>
     </div>
@@ -99,52 +108,236 @@
  <br/>
  <br/>
  <br/>
- <section>
-<div class="container">
-  <div class="panel-group">
-    <div class="panel panel-default">
-      
-      <div class="panel-body ">
-      <div class="row">
-          <div class="col-md-0 col-lg-0 col-sm-0 col-xs-0"></div>
-          <div class="col-md-4 col-lg-4 col-sm-12 col-xs-12"><img id="img1"src="img/Fortis.jpg"/></div>
-          <div class="col-md-7 col-lg-7 col-sm-12 col-xs-12">
-          <p>Fortis Healthcare Limited is a leading integrated healthcare delivery service provider in India. The healthcare verticals of the company primarily comprise hospitals, diagnostics and day care specialty facilities.</p>
-          <p>The company operates its healthcare delivery services in India, Dubai, Mauritius and Sri Lanka with 54 healthcare facilities (including projects under development), approximately 10,000 potential beds and 260 diagnostic centres.</p>
+
+
+<section>
+    <div class="container-fluid">
+       <div class="row">
+          <div class="col-lg-2 col-md-2 col-sm-0 col-xs-0 "></div>
+          <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12"><h2> Hospitals at Hebbal for cardiology</h2></div>
+          <div class="col-lg-2 col-md-2 col-sm-0 col-xs-0"></div>
        </div>
-         <div class="col-md-1 col-lg-1 hidden-sm hidden-xs"></div>
-</div>
+    </div>
+   
+</section>
 
 
+<section>
+    <div class="container-fluid">
+      <div class="row" id="first">
+          <div class="col-lg-2 col-md-2 hidden-sm hidden-xs"></div>
+          <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12"><center><img id="imgs"src="img/Fortis.jpg"/></center> </div>
+           <div class="col-lg-6 col-md-6 hidden-sm hidden-xs">
+           <br/>
+           <h4>Fortis Hospital</h4>
+          <p style="text-align:justify; text-justify:inter-word; ">Fortis Healthcare Limited is a leading integrated healthcare delivery service provider in India. The healthcare verticals of the company primarily comprise hospitals, diagnostics and day care specialty facilities.</p>
+          </div>
+          <div class="hidden-lg hidden-md col-sm-12 col-xs-12">
+          <center> <h4>Fortis Hospital</h4></center>
+          <center>
+          <p>Fortis Healthcare Limited is a leading integrated healthcare delivery service provider in India. The healthcare verticals of the company primarily comprise hospitals, diagnostics and day care specialty facilities.</p></center>
+          </div>
+
+          <div class="col-lg-2 col-md-3 hidden-sm hidden-xs"></div>
+      </div>
+      <br/>
+      <br/>
+    
+      <div class="row" id="first">
+          <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2"></div>
+          <div class="col-lg-2 col-md-2 col-sm-6 col-xs-6"><img id="imgs"src="img/Manipal.jpg"/></div>
+          <div  class="col-lg-6 col-md-6 hidden-sm hidden-xs">
+          <h4>Manipal Hospital</h4>
+
+           <p style="text-align:justify; text-justify:inter-word; ">Manipal Hospitals is part of the Manipal Education and Medical Group (MEMG), which pioneers in the field of education and healthcare delivery. The focus at Manipal Hospitals is to develop an affordable tertiary care multispecialty healthcare framework through its entire delivery spectrum and further extend it to homecare. </p>
+           </div>
+           <div class="hidden-lg hidden-md col-sm-12 col-xs-12">
+           <center><h4>Manipal Hospital</h4></center>
+           <center> <p style="text-align:justify; text-justify:inter-word; ">Manipal Hospitals is part of the Manipal Education and Medical Group (MEMG), which pioneers in the field of education and healthcare delivery. The focus at Manipal Hospitals is to develop an affordable tertiary care multispecialty healthcare framework through its entire delivery spectrum and further extend it to homecare. </p></center>
+           </div>
+        <div class="col-lg-2 col-md-2 col-sm-3 col-xs-3"></div>
+      </div>
+      <br/>
+      <br/>
+
+      <div class="row" id="first">
+          <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2"></div>
+          <div class="col-lg-2 col-md-2 col-sm-6 col-xs-6"><img id="imgs"src="img/Fortis.jpg"/> </div>
+           <div class="col-lg-6 col-md-6 hidden-sm hidden-xs">
+           <h4>Fortis Hospital</h4>
+          <p style="text-align:justify; text-justify:inter-word; ">Fortis Healthcare Limited is a leading integrated healthcare delivery service provider in India. The healthcare verticals of the company primarily comprise hospitals, diagnostics and day care specialty facilities.</p>
+          </div>
+          <div class="hidden-lg hidden-md col-sm-12 col-xs-12">
+          <center> <h4>Fortis Hospital</h4></center>
+          <center>
+          <p>Fortis Healthcare Limited is a leading integrated healthcare delivery service provider in India. The healthcare verticals of the company primarily comprise hospitals, diagnostics and day care specialty facilities.</p></center>
+          </div>
+          <div class="col-lg-2 col-md-3 col-sm-0 col-xs-3"></div>
+      </div>
+      <br/>
+      <br/>
+      <div class="row" id="first">
+          <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2"></div>
+          <div class="col-lg-2 col-md-2 col-sm-6 col-xs-6"><img id="imgs"src="img/Manipal.jpg"/></div>
+          <div  class="col-lg-6 col-md-6 hidden-sm hidden-xs">
+          <h4>Manipal Hospital</h4>
+
+           <p style="text-align:justify; text-justify:inter-word; ">Manipal Hospitals is part of the Manipal Education and Medical Group (MEMG), which pioneers in the field of education and healthcare delivery. The focus at Manipal Hospitals is to develop an affordable tertiary care multispecialty healthcare framework through its entire delivery spectrum and further extend it to homecare. </p>
+           </div>
+           <div class="hidden-lg hidden-md col-sm-12 col-xs-12">
+           <center><h4>Manipal Hospital</h4></center>
+           <center> <p style="text-align:justify; text-justify:inter-word; ">Manipal Hospitals is part of the Manipal Education and Medical Group (MEMG), which pioneers in the field of education and healthcare delivery. The focus at Manipal Hospitals is to develop an affordable tertiary care multispecialty healthcare framework through its entire delivery spectrum and further extend it to homecare. </p></center>
+           </div>
+         <div class="col-lg-2 col-md-2 col-sm-3 col-xs-3"></div>
+      </div>
+      <br/>
+      <br/>
+      <div class="row" id="first">
+          <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2"></div>
+          <div class="col-lg-2 col-md-2 col-sm-6 col-xs-6"><img id="imgs"src="img/Fortis.jpg"/> </div>
+         <div class="col-lg-6 col-md-6 hidden-sm hidden-xs">
+           <h4>Fortis Hospital</h4>
+          <p style="text-align:justify; text-justify:inter-word; ">Fortis Healthcare Limited is a leading integrated healthcare delivery service provider in India. The healthcare verticals of the company primarily comprise hospitals, diagnostics and day care specialty facilities.</p>
+          </div>
+          <div class="hidden-lg hidden-md col-sm-12 col-xs-12">
+          <center> <h4>Fortis Hospital</h4></center>
+          <center>
+          <p>Fortis Healthcare Limited is a leading integrated healthcare delivery service provider in India. The healthcare verticals of the company primarily comprise hospitals, diagnostics and day care specialty facilities.</p></center>
+          </div>
+          <div class="col-lg-2 col-md-3 col-sm-0 col-xs-3"></div>
+      </div>
+      <br/>
+      <br/>
+       <div class="row" id="first">
+          <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2"></div>
+          <div class="col-lg-2 col-md-2 col-sm-6 col-xs-6"><img id="imgs"src="img/Manipal.jpg"/></div>
+          <div  class="col-lg-6 col-md-6 hidden-sm hidden-xs">
+          <h4>Manipal Hospital</h4>
+
+           <p style="text-align:justify; text-justify:inter-word; ">Manipal Hospitals is part of the Manipal Education and Medical Group (MEMG), which pioneers in the field of education and healthcare delivery. The focus at Manipal Hospitals is to develop an affordable tertiary care multispecialty healthcare framework through its entire delivery spectrum and further extend it to homecare. </p>
+           </div>
+           <div class="hidden-lg hidden-md col-sm-12 col-xs-12">
+           <center><h4>Manipal Hospital</h4></center>
+           <center> <p style="text-align:justify; text-justify:inter-word; ">Manipal Hospitals is part of the Manipal Education and Medical Group (MEMG), which pioneers in the field of education and healthcare delivery. The focus at Manipal Hospitals is to develop an affordable tertiary care multispecialty healthcare framework through its entire delivery spectrum and further extend it to homecare. </p></center>
+           </div>
+         <div class="col-lg-2 col-md-2 col-sm-3 col-xs-3"></div>
+      </div>
+      <br/>
+      <br/>
+       <div class="row" id="first">
+          <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2"></div>
+          <div class="col-lg-2 col-md-2 col-sm-6 col-xs-6"><img id="imgs"src="img/Fortis.jpg"/> </div>
+           <div class="col-lg-6 col-md-6 hidden-sm hidden-xs">
+           <h4>Fortis Hospital</h4>
+          <p style="text-align:justify; text-justify:inter-word; ">Fortis Healthcare Limited is a leading integrated healthcare delivery service provider in India. The healthcare verticals of the company primarily comprise hospitals, diagnostics and day care specialty facilities.</p>
+          </div>
+          <div class="hidden-lg hidden-md col-sm-12 col-xs-12">
+          <center> <h4>Fortis Hospital</h4></center>
+          <center>
+          <p>Fortis Healthcare Limited is a leading integrated healthcare delivery service provider in India. The healthcare verticals of the company primarily comprise hospitals, diagnostics and day care specialty facilities.</p></center>
+          </div>
+          <div class="col-lg-2 col-md-3 col-sm-0 col-xs-3"></div>
+      </div>
+      <br/>
+      <br/>
+       <div class="row" id="first">
+          <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2"></div>
+          <div class="col-lg-2 col-md-2 col-sm-6 col-xs-6"><img id="imgs"src="img/Manipal.jpg"/></div>
+          <div  class="col-lg-6 col-md-6 hidden-sm hidden-xs">
+          <h4>Manipal Hospital</h4>
+
+           <p style="text-align:justify; text-justify:inter-word; ">Manipal Hospitals is part of the Manipal Education and Medical Group (MEMG), which pioneers in the field of education and healthcare delivery. The focus at Manipal Hospitals is to develop an affordable tertiary care multispecialty healthcare framework through its entire delivery spectrum and further extend it to homecare. </p>
+           </div>
+           <div class="hidden-lg hidden-md col-sm-12 col-xs-12">
+           <center><h4>Manipal Hospital</h4></center>
+           <center> <p style="text-align:justify; text-justify:inter-word; ">Manipal Hospitals is part of the Manipal Education and Medical Group (MEMG), which pioneers in the field of education and healthcare delivery. The focus at Manipal Hospitals is to develop an affordable tertiary care multispecialty healthcare framework through its entire delivery spectrum and further extend it to homecare. </p></center>
+           </div>
+         <div class="col-lg-2 col-md-2 col-sm-3 col-xs-3"></div>
+      </div>
+      <br/>
+      <br/>
+       <div class="row" id="first">
+          <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2"></div>
+          <div class="col-lg-2 col-md-2 col-sm-6 col-xs-6"><img id="imgs"src="img/Fortis.jpg"/> </div>
+          <div class="col-lg-6 col-md-6 hidden-sm hidden-xs">
+           <h4>Fortis Hospital</h4>
+          <p style="text-align:justify; text-justify:inter-word; ">Fortis Healthcare Limited is a leading integrated healthcare delivery service provider in India. The healthcare verticals of the company primarily comprise hospitals, diagnostics and day care specialty facilities.</p>
+          </div>
+          <div class="hidden-lg hidden-md col-sm-12 col-xs-12">
+          <center> <h4>Fortis Hospital</h4></center>
+          <center>
+          <p>Fortis Healthcare Limited is a leading integrated healthcare delivery service provider in India. The healthcare verticals of the company primarily comprise hospitals, diagnostics and day care specialty facilities.</p></center>
+          </div>
+          <div class="col-lg-2 col-md-3 col-sm-0 col-xs-3"></div>
+      </div>
+      <br/>
+      <br/>
+       <div class="row" id="first">
+          <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2"></div>
+          <div class="col-lg-2 col-md-2 col-sm-6 col-xs-6"><img id="imgs"src="img/Manipal.jpg"/></div>
+        <div  class="col-lg-6 col-md-6 hidden-sm hidden-xs">
+          <h4>Manipal Hospital</h4>
+
+           <p style="text-align:justify; text-justify:inter-word; ">Manipal Hospitals is part of the Manipal Education and Medical Group (MEMG), which pioneers in the field of education and healthcare delivery. The focus at Manipal Hospitals is to develop an affordable tertiary care multispecialty healthcare framework through its entire delivery spectrum and further extend it to homecare. </p>
+           </div>
+           <div class="hidden-lg hidden-md col-sm-12 col-xs-12">
+           <center><h4>Manipal Hospital</h4></center>
+           <center> <p style="text-align:justify; text-justify:inter-word; ">Manipal Hospitals is part of the Manipal Education and Medical Group (MEMG), which pioneers in the field of education and healthcare delivery. The focus at Manipal Hospitals is to develop an affordable tertiary care multispecialty healthcare framework through its entire delivery spectrum and further extend it to homecare. </p></center>
+           </div>
+         <div class="col-lg-2 col-md-2 col-sm-3 col-xs-3"></div>
+      </div>
+      <br/>
+      <br/>
+
+       <div class="row" id="first">
+          <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2"></div>
+          <div class="col-lg-2 col-md-2 col-sm-6 col-xs-6"><img id="imgs"src="img/Fortis.jpg"/> </div>
+               <div class="col-lg-6 col-md-6 hidden-sm hidden-xs">
+           <h4>Fortis Hospital</h4>
+          <p style="text-align:justify; text-justify:inter-word; ">Fortis Healthcare Limited is a leading integrated healthcare delivery service provider in India. The healthcare verticals of the company primarily comprise hospitals, diagnostics and day care specialty facilities.</p>
+          </div>
+          <div class="hidden-lg hidden-md col-sm-12 col-xs-12">
+          <center> <h4>Fortis Hospital</h4></center>
+          <center>
+          <p>Fortis Healthcare Limited is a leading integrated healthcare delivery service provider in India. The healthcare verticals of the company primarily comprise hospitals, diagnostics and day care specialty facilities.</p></center>
+          </div>
+          <div class="col-lg-2 col-md-3 col-sm-0 col-xs-3"></div>
+      </div>
+      <br/>
+      <br/>
+
+       <div class="row" id="first">
+          <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2"></div>
+          <div class="col-lg-2 col-md-2 col-sm-6 col-xs-6"><img id="imgs"src="img/Manipal.jpg"/></div>
+          <div  class="col-lg-6 col-md-6 hidden-sm hidden-xs">
+          <h4>Manipal Hospital</h4>
+
+           <p style="text-align:justify; text-justify:inter-word; ">Manipal Hospitals is part of the Manipal Education and Medical Group (MEMG), which pioneers in the field of education and healthcare delivery. The focus at Manipal Hospitals is to develop an affordable tertiary care multispecialty healthcare framework through its entire delivery spectrum and further extend it to homecare. </p>
+           </div>
+           <div class="hidden-lg hidden-md col-sm-12 col-xs-12">
+           <center><h4>Manipal Hospital</h4></center>
+           <center> <p style="text-align:justify; text-justify:inter-word; ">Manipal Hospitals is part of the Manipal Education and Medical Group (MEMG), which pioneers in the field of education and healthcare delivery. The focus at Manipal Hospitals is to develop an affordable tertiary care multispecialty healthcare framework through its entire delivery spectrum and further extend it to homecare. </p></center>
+           </div>
+         <div class="col-lg-2 col-md-2 col-sm-3 col-xs-3"></div>
+      </div>
+      <br/>
+      <br/>
+       <div class="row" id="first">
+          <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2"></div>
+          <div class="col-lg-2 col-md-2 col-sm-6 col-xs-6"><img id="imgs"src="img/Fortis.jpg"/> </div>
+               <div class="col-lg-6 col-md-6 hidden-sm hidden-xs">
+           <h4>Fortis Hospital</h4>
+          <p style="text-align:justify; text-justify:inter-word; ">Fortis Healthcare Limited is a leading integrated healthcare delivery service provider in India. The healthcare verticals of the company primarily comprise hospitals, diagnostics and day care specialty facilities.</p>
+          </div>
+          <div class="hidden-lg hidden-md col-sm-12 col-xs-12">
+          <center> <h4>Fortis Hospital</h4></center>
+          <center>
+          <p>Fortis Healthcare Limited is a leading integrated healthcare delivery service provider in India. The healthcare verticals of the company primarily comprise hospitals, diagnostics and day care specialty facilities.</p></center>
+          </div>
+          <div class="col-lg-2 col-md-3 col-sm-0 col-xs-3"></div>
       </div>
 
-    </div>
-    <div class="panel panel-default">
-      
-      <div class="panel-body "> 
-      <div class="row">
-          <div class="col-md-0 col-lg-0 hidden-sm hidden-xs"></div>
-          <div class="col-md-4 col-lg-4 col-sm-12 col-xs-12"><img id="img1"src="img/Manipal.jpg"style="position: relative;padding:0px;"/></div>
-          <div class="col-md-7 col-lg-7 col-sm-12 col-xs-12">
-          <p>Manipal Hospitals is part of the Manipal Education and Medical Group (MEMG), which pioneers in the field of education and healthcare delivery. The focus at Manipal Hospitals is to develop an affordable tertiary care multispecialty healthcare framework through its entire delivery spectrum and further extend it to homecare. </p>
-       </div>
-         <div class="col-md-1 col-lg-1 hidden-sm hidden-xs"></div>
-</div></div>
-    </div>
-    <div class="panel panel-default">
-      
-      <div class="panel-body ">Panel Content</div>
-    </div>
-    <div class="panel panel-default">
-      
-      <div class="panel-body ">Panel Content</div>
-    </div>
-    <div class="panel panel-default">
-      
-      <div class="panel-body ">Panel Content</div>
-    </div>
-  </div>
-</div>
+      </div>
 </section>
 
 
