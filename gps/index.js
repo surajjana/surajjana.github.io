@@ -1,3 +1,4 @@
+$(document).ready(function(){
 var map
   , you
   , pos
@@ -33,6 +34,18 @@ function gotPosition(position) {
     ;
 
   pos = ll(at.latitude, at.longitude);
+  console.log('Latitude : ' + at.latitude + ', Longitude : ' + at.longitude)
+
+
+  $.get('https://fleet-py-server.herokuapp.com/send/'+at.latitude.toString()+'/'+at.longitude.toString(), function(err, body){
+    console.log(body)
+  })
+
+
+
+
+
+
   if (you) you.setPosition(pos); else {
     t_0 = Math.round(+new Date / 1000);
     you = new google.maps.Marker({ map: map
@@ -82,3 +95,4 @@ function save(at) {
   log += (log ? ' ,' : '{"time":'+ t_0 +'\n,"head":\n '+ head +'\n,"data":\n [')
        + '[' + lat +','+ lng +','+ pre +','+ time +']\n';
 }
+})
