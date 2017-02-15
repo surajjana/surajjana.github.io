@@ -4,6 +4,17 @@ html, body {
   padding: 0;
 }
 
+#map1 {
+  height: 90%;
+}
+
+#values {
+  height: 10%;
+  position: fixed; 
+  bottom: 0%; 
+  width: 100%;
+}
+
 #map {
   height: 100%;
 }

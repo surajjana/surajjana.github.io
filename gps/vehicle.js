@@ -50,6 +50,8 @@ function accelerometerUpdate(e) {
    xPosition = Math.atan2(aY, aZ);
    yPosition = Math.atan2(aX, aZ);
 
+   $('#values').text('X : ' + aX + ' , Y : ' + aY + ' , Z : ' + aZ)
+
 }
 
 function gotPosition(position) {
@@ -60,7 +62,7 @@ function gotPosition(position) {
 
   pos = ll(at.latitude, at.longitude);
   console.log('Latitude : ' + at.latitude + ', Longitude : ' + at.longitude)
-
+  
 
   $.get('https://fleet-py-server.herokuapp.com/send/'+at.latitude.toString()+'/'+at.longitude.toString()+'/'+Math.floor(Date.now() / 1000).toString()+'/'+xPosition.toString()+'/'+yPosition.toString(), function(err, body){
     console.log(body)

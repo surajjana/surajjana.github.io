@@ -64,7 +64,7 @@ function gotPosition() {
 
     })
 
-    setTimeout(gotPosition, 2000)
+    setTimeout(gotPosition, 500)
   /*}*/
       
 
