@@ -15,7 +15,7 @@ var map
   , from
   ;
 
-var url = 'img/'
+var url = ''
 
 google.maps.event.addDomListener(window, 'load', init);
 
@@ -33,20 +33,25 @@ function gotPosition() {
   
     /*console.log(body)*/
     /*while(1){*/
+    /*url = 'img/'*/
+
     $.get('https://fleet-py-server.herokuapp.com/get', function(err, res, body){
         var data = JSON.parse(body.responseText)
 
-        console.log(data.res.lat + ' , ' + data.res.lng + ' , ' + data.distance)
+        console.log(data.res.lat + ' , ' + data.res.lng + ' , ' + data.res.time_stamp)
+        console.log('Acc X : ' + data.res.acc_x + ' , Acc Y : ' + data.res.acc_y)
 
         pos = ll(data.res.lat, data.res.lng);
 
-        url = url + data.status
+        /*url = url + data.status*/
+
+        console.log('Dot Color : ' + data.status)
 
         if (you) you.setPosition(pos); else {
           t_0 = Math.round(+new Date / 1000);
           you = new google.maps.Marker({ map: map
                                        , position: pos
-                                       , icon: marker(url, s(20, 17), p(10, 8))
+                                       , icon: marker(data.status, s(20, 17), p(10, 8))
                                        });
           google.maps.event.addListener(you, 'click', function() {
             location = 'mailto:?subject=GPS%20Track&body='

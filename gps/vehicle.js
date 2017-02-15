@@ -11,6 +11,8 @@ var map
   , from
   ;
 
+var xPosition = 0.0, yPosition = 0.0;
+
 google.maps.event.addDomListener(window, 'load', init);
 
 function init() {
@@ -19,12 +21,35 @@ function init() {
                              , mapTypeId: google.maps.MapTypeId.ROADMAP
                              });
 
+  if (window.DeviceMotionEvent == undefined) {
+      //No accelerometer is present. Use buttons. 
+      alert("no accelerometer");
+  }
+  else {
+      /*alert("accelerometer found");*/
+      window.addEventListener("devicemotion", accelerometerUpdate, true);
+  }
+
   if (navigator.geolocation)
     navigator.geolocation.watchPosition(gotPosition, function() {
       noGeolocation('Error: The Geolocation service failed.');
     }, { enableHighAccuracy: true, maximumAge: 10e3, timeout: 20e3 });
   else
     noGeolocation('Error: Your browser doesn\'t support geolocation.');
+  
+  
+
+}
+
+function accelerometerUpdate(e) {
+   var aX = event.accelerationIncludingGravity.x*1;
+   var aY = event.accelerationIncludingGravity.y*1;
+   var aZ = event.accelerationIncludingGravity.z*1;
+   //The following two lines are just to calculate a
+   // tilt. Not really needed. 
+   xPosition = Math.atan2(aY, aZ);
+   yPosition = Math.atan2(aX, aZ);
+
 }
 
 function gotPosition(position) {
@@ -37,7 +62,7 @@ function gotPosition(position) {
   console.log('Latitude : ' + at.latitude + ', Longitude : ' + at.longitude)
 
 
-  $.get('https://fleet-py-server.herokuapp.com/send/'+at.latitude.toString()+'/'+at.longitude.toString(), function(err, body){
+  $.get('https://fleet-py-server.herokuapp.com/send/'+at.latitude.toString()+'/'+at.longitude.toString()+'/'+Math.floor(Date.now() / 1000).toString()+'/'+xPosition.toString()+'/'+yPosition.toString(), function(err, body){
     console.log(body)
   })
 
